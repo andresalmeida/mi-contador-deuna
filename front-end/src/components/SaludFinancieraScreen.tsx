@@ -282,7 +282,7 @@ export default function SaludFinancieraScreen({
         {/* CTA */}
         <div style={{ padding: '12px 16px 32px', background: '#f2f2f7', flexShrink: 0 }}>
           <button
-            onClick={onMiPana}
+            onClick={() => onMiPana()}
             style={{
               width: '100%',
               padding: '16px 0',
