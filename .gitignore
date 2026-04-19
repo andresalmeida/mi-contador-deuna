@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Env — NUNCA subir claves
+.env
+.env.local
+.env.production
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Chainlit
+.chainlit/
+
+# Claude Code internal
+.claude/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PDFs y CSVs grandes (usar Git LFS si se necesitan)
+historial_transacional*.csv
+
+# Frontend
+front-end/node_modules/
+front-end/.env
+front-end/dist/
+front-end/test-results/
+front-end/.playwright/
+
+# VS Code
+.vscode/
