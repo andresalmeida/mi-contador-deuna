@@ -5,11 +5,15 @@ Uso: python tests/preguntas_benchmark.py
 """
 
 import asyncio
+import os
 import time
 import httpx
+from dotenv import load_dotenv
 
-API_URL = "http://localhost:8001"
-COMERCIO_ID = "COM-001"  # Tienda Don Aurelio
+load_dotenv()
+
+API_URL = os.getenv("API_URL", "http://localhost:8001")
+COMERCIO_ID = os.getenv("BENCHMARK_COMERCIO_ID", "COM-001")
 
 # ── 15 preguntas con criterios de validación ──────────────────────────────────
 # cada pregunta tiene:

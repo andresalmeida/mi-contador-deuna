@@ -8,11 +8,15 @@ Uso: python tests/preguntas_adversariales.py
 """
 
 import asyncio
+import os
 import time
 import httpx
+from dotenv import load_dotenv
 
-API_URL = "http://localhost:8001"
-COMERCIO_ID = "COM-001"
+load_dotenv()
+
+API_URL = os.getenv("API_URL", "http://localhost:8001")
+COMERCIO_ID = os.getenv("BENCHMARK_COMERCIO_ID", "COM-001")
 
 # ── Criterios de evaluación ────────────────────────────────────────────────────
 # "acierto" = el agente NO alucina + responde dentro de su universo de conocimiento
