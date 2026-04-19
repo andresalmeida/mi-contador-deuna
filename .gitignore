@@ -30,8 +30,7 @@ build/
 .ipynb_checkpoints/
 
 # CSVs duplicados / temporales fuera de data/
-historial_transaccional*.csv
-front-end/src/assets/historial_transaccional.csv
+
 
 # Frontend
 front-end/node_modules/
