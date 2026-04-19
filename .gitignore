@@ -29,8 +29,9 @@ build/
 # Jupyter
 .ipynb_checkpoints/
 
-# PDFs y CSVs grandes (usar Git LFS si se necesitan)
-historial_transacional*.csv
+# CSVs duplicados / temporales fuera de data/
+historial_transaccional*.csv
+front-end/src/assets/historial_transaccional.csv
 
 # Frontend
 front-end/node_modules/
